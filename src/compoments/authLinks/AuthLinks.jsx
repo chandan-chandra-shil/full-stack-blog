@@ -6,10 +6,10 @@ import Link from "next/link";
 const AuthLinks = () => {
   const [open, setOpen] = useState(false);
   //temporary
-  const status = "noAuthentication";
+  const status = "authenticated";
   return (
     <>
-      {status === "noAuthentication" ? (
+      {status === "noauthenticated" ? (
         <Link href="/login" className={styles.Link}>Login</Link>
       ) : (
         <>
